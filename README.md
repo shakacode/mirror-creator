@@ -2,6 +2,9 @@
 
 Another way to create an object with values equal to its key names.
 
+[![npm version](https://img.shields.io/npm/v/mirror-creator.svg?style=flat-square)](https://www.npmjs.com/package/mirror-creator)
+[![build status](https://img.shields.io/travis/shakacode/mirror-creator/master.svg?style=flat-square)](https://travis-ci.org/shakacode/mirror-creator)
+
 ## Install
 
 Get it via `npm`:

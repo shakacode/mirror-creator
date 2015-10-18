@@ -1,0 +1,40 @@
+{
+  "name": "mirror-creator",
+  "version": "0.0.1",
+  "description": "Another way to create an object with values equal to its key names",
+  "author": {
+    "name": "Alex Fedoseev",
+    "email": "alex.fedoseev@gmail.com",
+    "url": "https://github.com/alexfedoseev"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/alexfedoseev/mirror-creator",
+  "bugs": {
+    "url": "https://github.com/alexfedoseev/mirror-creator/issues"
+  },
+  "keywords": [
+    "flux",
+    "react",
+    "redux"
+  ],
+  "main": "./lib/mirrorCreator.js",
+  "scripts": {
+    "clean": "scripts/clean",
+    "build": "scripts/build",
+    "lint": "scripts/lint",
+    "test": "scripts/test",
+    "check": "npm run lint && npm run test",
+    "prerelease": "npm run check && npm run clean && npm run build",
+    "release:patch": "scripts/release patch",
+    "release:minor": "scripts/release minor",
+    "release:major": "scripts/release major"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "chai": "^3.3.0",
+    "eslint": "^1.7.1",
+    "eslint-plugin-babel": "^2.1.1",
+    "mocha": "^2.3.3"
+  }
+}

@@ -23,8 +23,10 @@
     "build": "scripts/build",
     "lint": "scripts/lint",
     "test": "scripts/test",
-    "check": "npm run lint && npm run test",
+    "check": "npm run lint && npm test",
     "prerelease": "npm run check && npm run clean && npm run build",
+    "preversion": "npm run prerelease",
+    "prepublish": "npm run prerelease",
     "release:patch": "scripts/release patch",
     "release:minor": "scripts/release minor",
     "release:major": "scripts/release major"

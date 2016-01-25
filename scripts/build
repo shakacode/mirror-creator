@@ -1,3 +1,5 @@
 #!/bin/sh
 
-$(npm bin)/babel src --out-dir lib
+$(npm bin)/babel \
+  --out-dir lib \
+  src

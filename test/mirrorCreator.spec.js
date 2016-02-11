@@ -17,4 +17,14 @@ describe('mirrorCreator', () => {
     expect(output.THREE).to.equal('THREE');
   });
 
+
+  it('should return an object with values equal to its prefixed key names', () => {
+    const input  = [ 'ONE', 'TWO', 'THREE' ];
+    const output = mirrorCreator(input, { prefix: 'PREFIX/' });
+
+    expect(output.ONE).to.equal('PREFIX/ONE');
+    expect(output.TWO).to.equal('PREFIX/TWO');
+    expect(output.THREE).to.equal('PREFIX/THREE');
+  });
+
 });

@@ -27,6 +27,13 @@ export default mirrorCreator([
   'ONE_MORE_ACTION_TYPE',
 ]);
 
+// Or you can specify prefix to avoid type name conflicts
+export default mirrorCreator([
+  'SOME_ACTION_TYPE',
+  'ANOTHER_ACTION_TYPE',
+  'ONE_MORE_ACTION_TYPE',
+], { prefix: 'mydomain/' });
+
 // actionCreator.js
 import actionTypes from 'actionTypes';
 

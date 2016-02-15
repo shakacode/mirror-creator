@@ -1,6 +1,6 @@
 {
   "name": "mirror-creator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Another way to create an object with values equal to its key names",
   "author": {
     "name": "Alex Fedoseev",

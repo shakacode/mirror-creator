@@ -1,11 +1,11 @@
 # mirror-creator
 
-One more way to create an object with values equal to its key names.
-
 [![npm version](https://img.shields.io/npm/v/mirror-creator.svg?style=flat-square)](https://www.npmjs.com/package/mirror-creator)
 [![build status](https://img.shields.io/travis/shakacode/mirror-creator/master.svg?style=flat-square)](https://travis-ci.org/shakacode/mirror-creator)
 [![dependencies status](https://img.shields.io/gemnasium/shakacode/mirror-creator.svg?style=flat-square)](https://gemnasium.com/shakacode/mirror-creator)
 [![license](https://img.shields.io/npm/l/mirror-creator.svg?style=flat-square)](https://www.npmjs.com/package/mirror-creator)
+
+One more way to create an object with values equal to its key names.
 
 ## Install
 

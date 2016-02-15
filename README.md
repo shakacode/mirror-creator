@@ -40,7 +40,7 @@ import actionTypes from 'actionTypes';
 dispatch({ type: actionTypes.SOME_ACTION_TYPE });
 ```
 
-**Pros**: DRY & clean.
+**Pros**: DRY & clean.  
 **Cons**: If you use Closure Compiler advanced mode for JS minification — keys are not optimized. Use [`keyMirror`](https://github.com/STRML/keyMirror) instead. [Details](https://github.com/facebook/react/issues/1639#issuecomment-45188026).
 
 
@@ -62,7 +62,7 @@ import * as actionTypes from 'actionTypes';
 dispatch({ type: actionTypes.SOME_ACTION_TYPE });
 ```
 
-**Pros**: No third-party lib required.
+**Pros**: No third-party lib required.  
 **Cons**: Duplications. Noisy.
 
 
@@ -84,5 +84,5 @@ import actionTypes from 'actionTypes';
 dispatch({ type: actionTypes.SOME_ACTION_TYPE });
 ```
 
-**Pros**: DRY. If Closure Compiler advanced mode is used — keys are optimized.
+**Pros**: DRY. If Closure Compiler advanced mode is used — keys are optimized.  
 **Cons**: `null` noise.

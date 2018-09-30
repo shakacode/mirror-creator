@@ -34,11 +34,37 @@ export default mirrorCreator([
   'ONE_MORE_ACTION_TYPE',
 ], { prefix: 'mydomain/' });
 
+// keyMirror way
+export default mirrorCreator({
+  SOME_ACTION_TYPE: '',
+  ANOTHER_ACTION_TYPE: '',
+  ONE_MORE_ACTION_TYPE: '',
+})
+
+// string way
+export default mirrorCreator('SOME_ACTION_TYPE|ANOTHER_ACTION_TYPE|ONE_MORE_ACTION_TYPE')
+
+// value of key is symbol
+export default mirrorCreator('SOME_ACTION_TYPE|ANOTHER_ACTION_TYPE|ONE_MORE_ACTION_TYPE', { useSymbol: true })
+
+// add prefix, suffix, if useSymol value is true, don't add prefix and suffix.
+export default mirrorCreator([
+  'SOME_ACTION_TYPE',
+  'ANOTHER_ACTION_TYPE',
+  'ONE_MORE_ACTION_TYPE',
+], { prefix: 'pre', suffix: 'suf' })
+
 // actionCreator.js
 import actionTypes from 'actionTypes';
 
 dispatch({ type: actionTypes.SOME_ACTION_TYPE });
 ```
+## mirrorCreator second argument(options) explain
+- `options.useSymbol`: value of key is unique Symbol value. have heighter priority than `prefix` and `suffix`.
+- `options.prefix`: add prefix
+- `options.suffix`: add suffix
+- `options.splidStr`: during first argument type is string, *options.splidStr* is a flag how split method of argument to split string to array, visit usage of mirrorCreator.
+
 
 **Pros**: DRY & clean.  
 **Cons**: If you use Closure Compiler advanced mode for JS minification — keys are not optimized. Use [`keyMirror`](https://github.com/STRML/keyMirror) instead. [Details](https://github.com/facebook/react/issues/1639#issuecomment-45188026).
